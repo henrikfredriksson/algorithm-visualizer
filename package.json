@@ -16,9 +16,6 @@
     "react-scripts": "3.0.1",
     "react-top-loading-bar": "^1.0.8"
   },
-  "engines": {
-    "node": "10.x"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
