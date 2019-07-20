@@ -3,6 +3,7 @@
 
 > Visualization of sorting algorithms. Inspired by [this video](https://www.youtube.com/watch?v=kPRA0W1kECg)
 
+[Demo](https://algorithm-visualizer.henrikfredriksson.now.sh/)
 
 ## Implemented algorithms
 
