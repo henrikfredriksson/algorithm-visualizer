@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import Layout from './components/layout';
 import Visualizer from './components/visualizer';
 
@@ -52,6 +52,8 @@ const algorithms = [
 export default function App() {
     return (
         <Router>
+            <Route path='/' exact render={() => <Redirect to="/shell"/>}/>
+
             {algorithms.map((item, index) =>
                 (
                     <Route
