@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono&display=swap');
+
+
+.App {
+  text-align: center;
+  background-color: #2E2E2E;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.rect:hover {
+  color: red;
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+.bar:hover {
+  opacity: 0.8;
+
+}
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Fira Code', 'Monaco';
+  color: #E1E1E1;
+}
+/*
+#container { display:block; }
+
+@media only screen and (orientation:portrait){
+
+  #root {
+
+    height: 100vw;
+
+    -webkit-transform: rotate(90deg);
+
+    -moz-transform: rotate(90deg);
+
+    -o-transform: rotate(90deg);
+
+    -ms-transform: rotate(90deg);
+
+    transform: rotate(90deg);
+
+  }
+
+}
+
+@media only screen and (orientation:landscape){
+
+  #root {
+
+     -webkit-transform: rotate(0deg);
+
+     -moz-transform: rotate(0deg);
+
+     -o-transform: rotate(0deg);
+
+     -ms-transform: rotate(0deg);
+
+     transform: rotate(0deg);
+
+  }
+
+} */
