@@ -1,0 +1,8 @@
+checks:
+  javascript: true
+build:
+  nodes:
+    analysis:
+      tests:
+        override:
+          - js-scrutinizer-run

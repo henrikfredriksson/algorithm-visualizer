@@ -14,7 +14,7 @@ export default class TopLoadingBar extends Component {
 
 
   componentDidMount() {
-    console.log(this.props.length)
+    // console.log(this.props.length)
     // Find a way to calculate how many state each algorithm has
 
     setInterval(()=> {

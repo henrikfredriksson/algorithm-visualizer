@@ -4,7 +4,10 @@
     "name": " Henrik Fredriksson",
     "email": "henrikfredriksson2@gmail.com"
   },
-  "repository": "henrikfredriksson/algorithm-visualizer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henrikfredriksson/algorithm-visualizer"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
