@@ -1,5 +1,7 @@
+# algorithm-visualizer [![Build Status](https://travis-ci.org/henrikfredriksson/algorithm-visualizer.svg?branch=master)](https://travis-ci.org/henrikfredriksson/algorithm-visualizer)
 
-Visualization of sorting algorithms. Inspired by [this video](https://www.youtube.com/watch?v=kPRA0W1kECg)
+
+> Visualization of sorting algorithms. Inspired by [this video](https://www.youtube.com/watch?v=kPRA0W1kECg)
 
 
 ## Implemented algorithms
