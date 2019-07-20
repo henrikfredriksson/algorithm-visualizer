@@ -14,8 +14,11 @@ export default class Visualizer extends Component {
       scalingFactor: Math.floor(window.innerHeight) * 0.8,
       paused: false,
       finised: false,
-      redirect: false
+      redirect: false,
+      nextUrl: ""
     }
+
+
 
     this.speed = this.props.speed || 2
     this.index = 0
@@ -28,6 +31,14 @@ export default class Visualizer extends Component {
     this.listener = window.addEventListener('keydown', e => {
       if (e.key === 'f') {
         this.stop()
+        this.setState({
+          nextUrl: this.props.next
+        })
+      } else if (e.key === 'b') {
+        this.stop()
+        this.setState({
+          nextUrl: this.props.prev
+        })
       }
     })
 
@@ -63,12 +74,12 @@ export default class Visualizer extends Component {
           ? this.stop()
           : this.setState(this.state.history[this.index])
       }
-    }, 2)
+    }, 10)
   }
 
   componentWillUnmount () {
     clearInterval(this.interval)
-    this.setState({})
+    // this.setState({})
   }
 
   start () {}
@@ -82,7 +93,7 @@ export default class Visualizer extends Component {
 
   render () {
     if (this.state.redirect) {
-      return <Redirect to={this.props.next} />
+      return <Redirect to={this.state.nextUrl || this.props.next} />
     }
 
     return (

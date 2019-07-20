@@ -12,16 +12,15 @@ export default class TopLoadingBar extends Component {
   }
 
 
-
   componentDidMount() {
-    // console.log(this.props.length)
+   
     // Find a way to calculate how many state each algorithm has
 
     setInterval(()=> {
       this.setState({
-        loadingBarProgress: this.state.loadingBarProgress + Math.floor(this.state.loadingBarProgress/this.props.length)
+        loadingBarProgress: (this.state.loadingBarProgress + 100/this.props.length)
       })
-    }, 2)
+    }, 100)
   }
 
   add = value => {
@@ -47,9 +46,9 @@ export default class TopLoadingBar extends Component {
           color='tomato'
           // onLoaderFinished={() => this.onLoaderFinished()}
         />
-        {/* <button onClick={() => this.add(10)}>Add 10</button>
+        <button onClick={() => this.add(10)}>Add 10</button>
         <button onClick={() => this.add(30)}>Add 30</button>
-        <button onClick={() => this.complete()}>Complete</button> */}
+        <button onClick={() => this.complete()}>Complete</button>
       </div>
     )
   }

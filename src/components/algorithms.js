@@ -31,10 +31,7 @@ export function bubbleSort(arr) {
         });
     }
 
-    state.push({
-        numbers: arr.slice(),
-        active: [-1, -1]
-    });
+
 
     return state;
 }
@@ -77,20 +74,6 @@ export function insertionSort(arr) {
         active: [...Array(arr.length).keys()]
     });
 
-    state.push({
-        numbers: arr.slice(),
-        active: []
-    });
-
-    state.push({
-        numbers: arr.slice(),
-        active: [...Array(arr.length).keys()]
-    });
-
-    state.push({
-        numbers: arr.slice(),
-        active: []
-    });
 
     return state;
 }
@@ -145,10 +128,7 @@ export function quickSort(arr, less = (a, b) => a <b) {
             active: [...Array(i).keys(), i]
         });
     }
-    state.push({
-        numbers: arr.slice(),
-        active: []
-    });
+
 
     return state;
 }
@@ -192,10 +172,7 @@ export function shellSort(arr) {
             active: [...Array(i).keys(), i]
         });
     }
-    state.push({
-        numbers: arr.slice(),
-        active: []
-    });
+
 
     return state;
 }

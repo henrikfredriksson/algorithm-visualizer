@@ -13,7 +13,7 @@ let randomNumbers = [...Array(amount).keys()].map(x => Math.random())
 const algorithms = [
     {
         name: 'Shell sort',
-        path: '/',
+        path: '/shell',
         algorithm: shellSort,
         length: shellSort(randomNumbers).length,
         prev: '/bubble',
@@ -25,7 +25,7 @@ const algorithms = [
         path: '/quick',
         algorithm: quickSort,
         length: quickSort(randomNumbers).length,
-        prev: '/',
+        prev: '/shell',
         next: '/insertion',
         speed: 10
     },
@@ -44,7 +44,7 @@ const algorithms = [
         algorithm: bubbleSort,
         length: bubbleSort(randomNumbers).length,
         prev: '/insertion',
-        next: '/',
+        next: '/shell',
         speed: 1
     },
 ];
