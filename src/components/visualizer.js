@@ -15,10 +15,8 @@ export default class Visualizer extends Component {
       paused: false,
       finised: false,
       redirect: false,
-      nextUrl: ""
+
     }
-
-
 
     this.speed = this.props.speed || 2
     this.index = 0
@@ -79,7 +77,7 @@ export default class Visualizer extends Component {
 
   componentWillUnmount () {
     clearInterval(this.interval)
-    // this.setState({})
+    window.removeEventListener('keydown', this.listener)
   }
 
   start () {}
@@ -92,8 +90,11 @@ export default class Visualizer extends Component {
   }
 
   render () {
+    // const {redirect, size, active} = this.state
+
+
     if (this.state.redirect) {
-      return <Redirect to={this.state.nextUrl || this.props.next} />
+      return <Redirect to={this.props.next} />
     }
 
     return (
@@ -106,8 +107,6 @@ export default class Visualizer extends Component {
           height: '100%'
         }}
       >
-        {/* <h1 style={{color: 'tomato'}}>Hello</h1> */}
-
         <div style={{ position: 'relative', margin: '0 auto' }}>
           <svg width={`${window.innerWidth}px`} height={`100vh`}>
             {this.state.numbers.map((x, index) => {
